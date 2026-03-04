@@ -5,8 +5,14 @@ function Open_Categ_list() {
 
 
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".slide-swp", {
       pagination: {
         el: ".swiper-pagination",
+        DynamicaBullests:true,
+        clickable:true,
       },
+      autoplay:{
+        delay:2500,
+      }
+      ,loop:true
     });
