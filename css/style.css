@@ -79,6 +79,7 @@ header{
     right: 0;
     top: 0;
     box-shadow: 5px 8px 8px #d1d1d13b;
+    z-index: 1000;
 }
 header .top_header .container{
     display: flex;
@@ -335,4 +336,209 @@ header .bottom_header .nav_links li.active a{
    width: 100%;
    height: 100%;
    background: transparent;
+}
+
+.slide{
+   margin-bottom: 70px;
+
+}
+.top_slide{
+   position: relative;
+   margin-bottom: 20px;
+   border-bottom: 3px solid var(--main_color);
+}
+.top_slide h2{position: relative;
+   text-transform: uppercase;
+   background: var(--main_color);
+   counter-reset: var(--white_color);
+   font-size: 18px;
+   padding: 10px 40px;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   width: max-content;
+
+
+}
+.top_slide h2::before{
+   content: '';
+   position: absolute;
+   width: 0;
+   height: 0;
+   top: 0;
+   z-index: 9;
+   border-left: 20px solid transparent;
+   background: var(--white_color);
+   left: 0;
+   border-bottom: 20px solid #e26e02;
+
+}
+.top_slide h2 i{
+   color: var(--white_color);
+}
+.slide .container{
+   position: relative;
+}
+.slide .container .mySwier{
+   padding: 10px 0;
+
+
+}
+.slide .container .mySwier .btn_swip{
+   position: absolute;
+   top: 30px;
+   right: 0;
+   background: var(--bg_color);
+   color: var(--color_heading);
+   font-weight: bold;
+   border-radius: 5px;
+   height: 35px;
+   width: 35px;
+   border: 1px solid var(--border_color);
+
+}
+.slide .container .mySwier .btn_swip::after{
+   font-size: 12px;
+
+}
+.slide .container .mySwier .btn_swip.swiper_button_prev{
+   left: calc(100%-80%);
+
+}
+
+
+
+
+
+.mySwiperr{
+   overflow: hidden;
+}
+.product{
+   background: #fff;
+   padding: 20px 20px;
+   box-shadow: 5px 5px 10px #949494;
+   border: 1px solid var(--border_color);
+   border-radius:5px;
+   position: relative;
+}
+.product .sale_present{
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   z-index: 2;
+   background: #ed0505;
+   color: var(--white_color);
+   padding: 4px 10px;
+   font-size: 13px;
+
+}
+.product .img_product{
+   position: relative;
+   height: 180px;
+   padding: 0 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: 0.3s;
+
+}
+.product:hover .img_product{
+   scale: 1.1;
+}
+.product .name_product{
+   margin-bottom: 10px;
+   color: var(--color_heading);
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 2;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+} 
+.product .name_product a:hover{
+   text-decoration: underline;
+}
+.stars{
+   margin-bottom: 10px;
+
+}
+.stars{
+   color: var(--main_color);
+   font-size: 14px;
+}
+.price{
+   display: flex;
+   align-items: center;
+   gap: 12px;
+}
+.price p{
+   color: var(--main_color);
+   font-weight: bold;
+   font-size: 18;
+}
+.price .old_price{
+   color: var(--p_color);
+   text-decoration: line-through;
+   font-size: 13px;
+   font-weight: normal;
+}
+.product .icons{
+   display: flex;
+   gap: 10px;
+   margin-top: 15px;
+
+}
+.product .icons .icon_product{
+   width: 40px;
+   height: 40px;
+   border: 1px solid var(--border_color);
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: 0.3s;
+}
+.product .icons .icon_product:hover{
+   background-color: var(--main_color);
+}
+.product .icons .icon_product i{
+   font-size: 14px;
+}
+.product .icons .icon_product:hover i{
+   color: var(--white_color);
+}
+.product .icons .btn_add_cart{
+   background: var(--main_color);
+   display: flex;
+   align-items: center;
+   gap: 5px;
+   color: var(--white_color);
+   padding: 5px 10px;
+   cursor: pointer;
+   transition: 0.3s;
+   border: 1px solid var(--main_color);
+
+}
+.product .icons .btn_add_cart i{
+   color: var(--white_color);
+}
+.product .icons .btn_add_cart.active{
+   color: var(--color_heading);
+   background: transparent;
+}
+.product .icons .btn_add_cart.active i{
+   color: var(--main_color);
+}
+.product .icons .btn_add_cart:hover{
+   scale: 1.05;
+   background: #f47600;
+}
+
+.banners .banners_boxs{
+   display: flex;
+   justify-content: space-between;
+
+}
+.banners .banners_boxs .box{
+   width: 49%;
+
 }

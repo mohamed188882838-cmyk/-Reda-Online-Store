@@ -12,7 +12,7 @@ var swiper = new Swiper(".slide-swp", {
         clickable:true,
       },
       autoplay:{
-        delay:2500,
+        delay:25000,
       }
       ,loop:true
     });

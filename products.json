@@ -44,7 +44,7 @@
   {
     "id": 6,
     "img": "img/product/6.png",
-    "name": "Infinix Smart (Galaxy White, 4GB RAM, 64GB Storage)",
+    "name": "XS Max ( Gold, 128GB , 64GB Storage)",
     "price": 220,
     "old_price": 300,
     "catetory":"mobiles"
@@ -81,7 +81,7 @@
   {
     "id": 11,
     "img": "img/product/11.png",
-    "name": "Infinix Hot 40i (RAM: 4+4GB, 128GB)",
+    "name": "vivo 40i (RAM: 4+4GB, 128GB)",
     "price": 260,
     "old_price": 300,
     "catetory":"mobiles"
@@ -110,7 +110,7 @@
   {
     "id": 15,
     "img": "img/product/15.png",
-    "name": "Infinix Smart 6 Plus (Miracle Black)",
+    "name": "samsung Plus (Miracle Black)",
     "price": 240,
     "old_price": 300,
     "catetory":"mobiles"
