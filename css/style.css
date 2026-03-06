@@ -67,7 +67,7 @@ input,select,button{
     margin: auto;
     max-width: 1350px;
 }
-@media (max_width:1350px) {
+@media (max-width:1350px) {
     .container{
         width: 90%;
     }
@@ -243,7 +243,7 @@ header .bottom_header .nav_links li a{
    color: var(--color_heading);
    transition: 0.3s;
 }
-header .bottom_header .nav_links li :hover a{
+header .bottom_header .nav_links li:hover a{
    color: var(--main_color);
 }
 header .bottom_header .nav_links li.active a{
@@ -323,7 +323,7 @@ header .bottom_header .nav_links li.active a{
    gap: 5px;
    margin: 7px 0;
 }
-.banners_4 .container .box .sale .span{
+.banners_4 .container .box .sale span{
    font-size: 25px;
    font-weight: bold;
 }
@@ -379,12 +379,12 @@ header .bottom_header .nav_links li.active a{
 .slide .container{
    position: relative;
 }
-.slide .container .mySwier{
+.slide .container .mySwiper{
    padding: 10px 0;
 
 
 }
-.slide .container .mySwier .btn_swip{
+.slide .container .mySwiper .btn_Swip{
    position: absolute;
    top: 30px;
    right: 0;
@@ -397,12 +397,12 @@ header .bottom_header .nav_links li.active a{
    border: 1px solid var(--border_color);
 
 }
-.slide .container .mySwier .btn_swip::after{
+.slide .container .mySwiper .btn_Swip::after{
    font-size: 12px;
 
 }
-.slide .container .mySwier .btn_swip.swiper_button_prev{
-   left: calc(100%-80%);
+.slide .container .mySwiper .btn_Swip.swiper-button-prev{
+   left: calc(100% - 80%);
 
 }
 
@@ -410,7 +410,7 @@ header .bottom_header .nav_links li.active a{
 
 
 
-.mySwiperr{
+.mySwiper{
    overflow: hidden;
 }
 .product{
@@ -473,7 +473,7 @@ header .bottom_header .nav_links li.active a{
 .price p{
    color: var(--main_color);
    font-weight: bold;
-   font-size: 18;
+   font-size: 18px;
 }
 .price .old_price{
    color: var(--p_color);
@@ -532,6 +532,9 @@ header .bottom_header .nav_links li.active a{
    scale: 1.05;
    background: #f47600;
 }
+.banners{
+   margin: 50px 0;
+}
 
 .banners .banners_boxs{
    display: flex;
@@ -540,5 +543,10 @@ header .bottom_header .nav_links li.active a{
 }
 .banners .banners_boxs .box{
    width: 49%;
+
+}
+.banners .banners_boxs.banner_3_img .box{
+
+width: 32%;
 
 }
