@@ -1,26 +1,21 @@
-var swiper = new Swiper(".slide-swp", {
-      pagination: {
-        el: ".swiper-pagination",
-        dynamicBullets: true,
-        clickable: true,
-      },
-      autoplay:{
-        delay:2500,
-      }
-      ,loop:true
-    });
+document.querySelectorAll(".slide_product").forEach(function(el){
 
-    var swiper = new Swiper(".slide_product", {
-        slidesPerView: 5,
-        spaceBetween: 20,
-      
-      autoplay:{
-        delay:2500,
-      },
-      navigation:{
-        nextEl:".swiper-button-next",
-        prevEl:".swiper-button-prev",
-      },
-      loop:true
-    });
+  new Swiper(el, {
+    slidesPerView: 5,
+    spaceBetween: 20,
 
+    autoplay:{
+      delay:2500,
+    },
+
+    navigation:{
+      nextEl: el.querySelector(".swiper-button-next"),
+      prevEl: el.querySelector(".swiper-button-prev"),
+    },
+
+    loop:true,
+    observer:true,
+    observeParents:true
+  });
+
+});
